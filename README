@@ -1,8 +1,3 @@
-Uso do .NET SDK
-O .NET SDK oferece uma variedade de comandos e funcionalidades para o desenvolvimento de aplicativos C#. Abaixo, você encontrará uma lista de comandos e explicações breves de como usá-los.
-
-Comandos Básicos
-dotnet [sdk-options] [command] [command-options] [arguments]: Execute um comando do SDK do .NET.
 Opções de sdk-options
 -d ou --diagnostics: Habilitar saída de diagnóstico.
 -h ou --help: Mostrar a ajuda da linha de comando.
@@ -11,164 +6,52 @@ Opções de sdk-options
 --list-sdks: Exiba os SDKs instalados.
 --version: Exiba a versão do SDK do .NET em uso.
 Comandos do SDK
-Aqui estão alguns comandos úteis do SDK do .NET:
+Aqui estão alguns comandos do SDK do .NET que podem facilitar o seu desenvolvimento:
 
-add: Adicionar um pacote ou uma referência a um projeto do .NET.
-build: Criar um projeto do .NET.
-build-server: Interagir com servidores iniciados por um build.
-clean: Limpar as saídas do build de um projeto do .NET.
-format: Aplicar preferências de estilo a um projeto ou solução.
-list: Listar as referências de um projeto do .NET.
-msbuild: Executar comandos do MSBuild (Microsoft Build Engine).
-new: Criar um novo projeto ou arquivo do .NET.
-nuget: Fornece comandos adicionais do NuGet.
-pack: Criar um pacote do NuGet.
-publish: Publicar um projeto do .NET para implantação.
-remove: Remover um pacote ou uma referência de um projeto do .NET.
-restore: Restaurar as dependências especificadas em um projeto do .NET.
-run: Criar e executar uma saída de projeto do .NET.
-sdk: Gerenciar a instalação do SDK do .NET.
-sln: Modificar os arquivos da solução do Visual Studio.
-store: Armazenar os assemblies especificados no repositório de pacotes do runtime.
-test: Executar testes de unidade usando o executor de testes especificado em um projeto do .NET.
-tool: Instalar ou gerenciar ferramentas que ampliam a experiência do .NET.
-vstest: Executar comandos do VSTest (Microsoft Test Engine).
-workload: Gerenciar as cargas de trabalho opcionais.
+add: Adicione um pacote ou referência a um projeto do .NET.
+build: Crie um projeto do .NET.
+clean: Limpe as saídas do build de um projeto do .NET.
+format: Aplique preferências de estilo a um projeto ou solução.
+list: Liste as referências de um projeto do .NET.
+msbuild: Execute comandos do MSBuild (Microsoft Build Engine).
+new: Crie um novo projeto ou arquivo do .NET.
+nuget: Forneça comandos adicionais do NuGet.
+pack: Crie um pacote do NuGet.
+publish: Publique um projeto do .NET para implantação.
+restore: Restaure as dependências especificadas em um projeto do .NET.
+run: Crie e execute uma saída de projeto do .NET.
+sdk: Gerencie a instalação do SDK do .NET.
+sln: Modifique os arquivos da solução do Visual Studio.
+store: Armazene os assemblies especificados no repositório de pacotes do runtime.
+test: Execute testes de unidade usando o executor de testes especificado em um projeto do .NET.
+tool: Instale ou gerencie ferramentas que aprimoram a experiência do .NET.
+workload: Gerencie cargas de trabalho opcionais.
 Comandos Adicionais de Ferramentas em Pacote
-Aqui estão alguns comandos adicionais de ferramentas em pacote:
+Aqui estão alguns comandos adicionais de ferramentas em pacote que podem ser úteis:
 
 dev-certs: Crie e gerencie certificados de desenvolvimento.
-fsi: Iniciar F# Interativo / executar scripts do F#.
-sql-cache: SQL Server cache command-line tools.
-user-secrets: Gerencie segredos do usuário de desenvolvimento.
+fsi: Inicie o F# Interativo ou execute scripts do F#.
+sql-cache: Ferramentas de cache do SQL Server em linha de comando.
+user-secrets: Gerencie segredos do usuário para desenvolvimento.
 watch: Inicie um observador de arquivo que executa um comando quando os arquivos são alterados.
 Exemplo de Uso de dotnet new
-O comando dotnet new é usado para criar um projeto .NET baseado em modelos. Aqui estão alguns modelos comuns:
+O comando dotnet new é usado para criar um novo projeto .NET com base em modelos predefinidos. Aqui estão alguns exemplos de modelos comuns que você pode usar:
 
-Aplicativo do Console
-Aplicativo do Windows Forms
-Aplicativo WPF
-ASP.NET Core Web App
-Biblioteca de Classes
-Blazor Server App
+Aplicativo do Console: Crie um aplicativo de console simples.
 
-Operadores Aritméticos:
-+ (adição): Soma dois valores.
-- (subtração): Subtrai um valor de outro.
-* (multiplicação): Multiplica dois valores.
-/ (divisão): Divide um valor pelo outro.
-% (módulo): Retorna o resto da divisão de um valor pelo outro.
+Exemplo: dotnet new console
+Aplicativo do Windows Forms: Crie um aplicativo Windows Forms (para interfaces gráficas do Windows).
 
-Operadores de Atribuição:
-= (atribuição): Atribui um valor a uma variável.
-+= (atribuição de adição): Adiciona um valor a uma variável.
--= (atribuição de subtração): Subtrai um valor de uma variável.
-*= (atribuição de multiplicação): Multiplica uma variável por um valor.
-/= (atribuição de divisão): Divide uma variável por um valor.
+Exemplo: dotnet new winforms
+Aplicativo WPF (Windows Presentation Foundation): Crie um aplicativo WPF para criar interfaces gráficas ricas para desktop.
 
-Operadores de Comparação:
-== (igual): Verifica se dois valores são iguais.
-!= (diferente): Verifica se dois valores são diferentes.
-< (menor que): Verifica se um valor é menor que outro.
-> (maior que): Verifica se um valor é maior que outro.
-<= (menor ou igual a): Verifica se um valor é menor ou igual a outro.
->= (maior ou igual a): Verifica se um valor é maior ou igual a outro.
+Exemplo: dotnet new wpf
+ASP.NET Core Web App: Crie um aplicativo web ASP.NET Core.
 
-Operadores Lógicos:
-&& (E lógico): Retorna verdadeiro se ambas as condições forem verdadeiras.
-|| (OU lógico): Retorna verdadeiro se pelo menos uma das condições for verdadeira.
-! (Negação lógica): Inverte o valor lógico de uma expressão.
+Exemplo: dotnet new webapp
+Biblioteca de Classes: Crie uma biblioteca de classes reutilizável.
 
-Operadores Bit a Bit:
-& (E bit a bit): Realiza uma operação AND bit a bit entre dois valores.
-| (OU bit a bit): Realiza uma operação OR bit a bit entre dois valores.
-^ (OU exclusivo bit a bit): Realiza uma operação XOR bit a bit entre dois valores.
-~ (Negação bit a bit): Inverte todos os bits de um valor.
+Exemplo: dotnet new classlib
+Blazor Server App: Crie um aplicativo Blazor Server para desenvolvimento web interativo.
 
-Operadores de Deslocamento de Bits:
-<< (Deslocamento à esquerda): Desloca os bits de um valor para a esquerda.
->> (Deslocamento à direita): Desloca os bits de um valor para a direita.
-
-// Trabalhando o console
-Console.Write("Digite seu nome :");
-string name = Console.ReadLine();
-Console.WriteLine($"Olá {name}! ");
-
-Console.Write("Digite o ano do seu nascimento : ");
-int year  = int.Parse(Console.ReadLine());
-int age = 2023 - year; // +, =, *'/
-Console.WriteLine($"Você tem {age} anos. ");
-
-if(age >= 18 || name == "Dilei")
-{
-   Console.WriteLine("Você é maior de idade seu cavalo !!");
-} 
-else
-{
-   Console.WriteLine("Você ainda é um virgem !!");
-   Console.WriteLine("Teste !!");
-}
-
-Site para ver o resultado no compilador ONline: https://sharplab.io/
-
-//ARRAY
-
-class Program
-{
-    static void Main()
-
-    {
-        string[] names = { "Dilei", "Osvaldo" };
-
-        Console.WriteLine("Teste");
-    }
-}
-
-
-class Program
-{
-    static void Main()
-
-    {
-        string[] names = { "Dilei", "Osvaldo" };
-
-        Console.WriteLine(names[0]);
-        Console.WriteLine(names[1]);
-
-        
-    }
-}   
-
-//Looping
-
-class Program
-{
-    static void Main()
-
-    {
-        string[] names = { "Dilei", "Osvaldo", "Lupercio" };
-
-        for (int i = 0; i < names.Length; i++)
-        {
-            Console.WriteLine(names[i]);
-        }        
-    }
-}
-
-class Program
-{
-    static void Main()
-
-    {
-        string[] names = { "Dilei", "Osvaldo", "Lupercio" };
-
-        foreach (string name in names)
-        {
-           Console.WriteLine(name);
-        }
-
-    
-    }
-}
-
-Parei no Video no 1:06:32
+Exemplo: dotnet new blazorserver
