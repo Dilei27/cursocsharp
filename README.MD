@@ -45,15 +45,13 @@
 - [X] `<<` (Deslocamento à esquerda): Desloca os bits de um valor para a esquerda.
 - [X] `>>` (Deslocamento à direita): Desloca os bits de um valor para a direita.
 
-
-
 ## 👨🏻‍💻 Como executar o Teste
 
-[Via Terminal] - Digitar o Comando :  robot -d ./logs .\tests
+[Via Terminal] - Digitar o Comando :  dotnet run
 
+[Via Terminal] - Digitar o Comando :  dotnet new - criar um projeto .NET baseado em um modelo.
 
 ## 👨🏻‍💻 Estruturas de Controle
-
 
 ##### Estruturas Condicionais
 
@@ -74,7 +72,6 @@
 
   }
 ```
-
 
 - [X] `else` (senão): Executa um bloco de código alternativo se a condição do if for falsa.
 
@@ -99,8 +96,6 @@ else
 
 }
 ```
-
-
 
 - [X] `elseif` (senãose): Executa um bloco de código alternativo se a condição do if for falsa.
 
@@ -142,8 +137,7 @@ else
 }
 ```
 
-
-- [X]  `switch` (escolha): Avalia uma expressão e executa um bloco de código correspondente com base em valores.
+- [X] `switch` (escolha): Avalia uma expressão e executa um bloco de código correspondente com base em valores.
 
  Exemplo:
 
