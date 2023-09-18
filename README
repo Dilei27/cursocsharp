@@ -1,57 +1,62 @@
-Opções de sdk-options
--d ou --diagnostics: Habilitar saída de diagnóstico.
--h ou --help: Mostrar a ajuda da linha de comando.
---info: Exiba informações do .NET.
---list-runtimes: Exiba os runtimes instalados.
---list-sdks: Exiba os SDKs instalados.
---version: Exiba a versão do SDK do .NET em uso.
-Comandos do SDK
-Aqui estão alguns comandos do SDK do .NET que podem facilitar o seu desenvolvimento:
+## Operadores e Estruturas em C#
 
-add: Adicione um pacote ou referência a um projeto do .NET.
-build: Crie um projeto do .NET.
-clean: Limpe as saídas do build de um projeto do .NET.
-format: Aplique preferências de estilo a um projeto ou solução.
-list: Liste as referências de um projeto do .NET.
-msbuild: Execute comandos do MSBuild (Microsoft Build Engine).
-new: Crie um novo projeto ou arquivo do .NET.
-nuget: Forneça comandos adicionais do NuGet.
-pack: Crie um pacote do NuGet.
-publish: Publique um projeto do .NET para implantação.
-restore: Restaure as dependências especificadas em um projeto do .NET.
-run: Crie e execute uma saída de projeto do .NET.
-sdk: Gerencie a instalação do SDK do .NET.
-sln: Modifique os arquivos da solução do Visual Studio.
-store: Armazene os assemblies especificados no repositório de pacotes do runtime.
-test: Execute testes de unidade usando o executor de testes especificado em um projeto do .NET.
-tool: Instale ou gerencie ferramentas que aprimoram a experiência do .NET.
-workload: Gerencie cargas de trabalho opcionais.
-Comandos Adicionais de Ferramentas em Pacote
-Aqui estão alguns comandos adicionais de ferramentas em pacote que podem ser úteis:
+### Operadores Aritméticos
 
-dev-certs: Crie e gerencie certificados de desenvolvimento.
-fsi: Inicie o F# Interativo ou execute scripts do F#.
-sql-cache: Ferramentas de cache do SQL Server em linha de comando.
-user-secrets: Gerencie segredos do usuário para desenvolvimento.
-watch: Inicie um observador de arquivo que executa um comando quando os arquivos são alterados.
-Exemplo de Uso de dotnet new
-O comando dotnet new é usado para criar um novo projeto .NET com base em modelos predefinidos. Aqui estão alguns exemplos de modelos comuns que você pode usar:
+- `+` (adição): Soma dois valores.
+- `-` (subtração): Subtrai um valor de outro.
+- `*` (multiplicação): Multiplica dois valores.
+- `/` (divisão): Divide um valor pelo outro.
+- `%` (módulo): Retorna o resto da divisão de um valor pelo outro.
 
-Aplicativo do Console: Crie um aplicativo de console simples.
+### Operadores de Atribuição
 
-Exemplo: dotnet new console
-Aplicativo do Windows Forms: Crie um aplicativo Windows Forms (para interfaces gráficas do Windows).
+- `=` (atribuição): Atribui um valor a uma variável.
+- `+=` (atribuição de adição): Adiciona um valor a uma variável.
+- `-=` (atribuição de subtração): Subtrai um valor de uma variável.
+- `*=` (atribuição de multiplicação): Multiplica uma variável por um valor.
+- `/=` (atribuição de divisão): Divide uma variável por um valor.
 
-Exemplo: dotnet new winforms
-Aplicativo WPF (Windows Presentation Foundation): Crie um aplicativo WPF para criar interfaces gráficas ricas para desktop.
+### Operadores de Comparação
 
-Exemplo: dotnet new wpf
-ASP.NET Core Web App: Crie um aplicativo web ASP.NET Core.
+- `==` (igual): Verifica se dois valores são iguais.
+- `!=` (diferente): Verifica se dois valores são diferentes.
+- `<` (menor que): Verifica se um valor é menor que outro.
+- `>` (maior que): Verifica se um valor é maior que outro.
+- `<=` (menor ou igual a): Verifica se um valor é menor ou igual a outro.
+- `>=` (maior ou igual a): Verifica se um valor é maior ou igual a outro.
 
-Exemplo: dotnet new webapp
-Biblioteca de Classes: Crie uma biblioteca de classes reutilizável.
+### Operadores Lógicos
 
-Exemplo: dotnet new classlib
-Blazor Server App: Crie um aplicativo Blazor Server para desenvolvimento web interativo.
+- `&&` (E lógico): Retorna verdadeiro se ambas as condições forem verdadeiras.
+- `||` (OU lógico): Retorna verdadeiro se pelo menos uma das condições for verdadeira.
+- `!` (Negação lógica): Inverte o valor lógico de uma expressão.
 
-Exemplo: dotnet new blazorserver
+### Operadores Bit a Bit
+
+- `&` (E bit a bit): Realiza uma operação AND bit a bit entre dois valores.
+- `|` (OU bit a bit): Realiza uma operação OR bit a bit entre dois valores.
+- `^` (OU exclusivo bit a bit): Realiza uma operação XOR bit a bit entre dois valores.
+- `~` (Negação bit a bit): Inverte todos os bits de um valor.
+
+### Operadores de Deslocamento de Bits
+
+- `<<` (Deslocamento à esquerda): Desloca os bits de um valor para a esquerda.
+- `>>` (Deslocamento à direita): Desloca os bits de um valor para a direita.
+
+### Estruturas de Controle
+
+#### Estruturas Condicionais
+
+- `if` (se): Executa um bloco de código se a condição for verdadeira.
+- `else` (senão): Executa um bloco de código alternativo se a condição do `if` for falsa.
+- `else if` (senão se): Permite testar múltiplas condições alternativas após um `if`.
+- `switch` (escolha): Avalia uma expressão e executa um bloco de código correspondente com base em valores.
+
+#### Estruturas de Repetição
+
+- `for` (para): Executa um bloco de código várias vezes com base em uma condição.
+- `while` (enquanto): Executa um bloco de código enquanto uma condição é verdadeira.
+- `do while` (faça enquanto): Executa um bloco de código pelo menos uma vez e depois continua enquanto a condição é verdadeira.
+- `foreach` (para cada): Itera através de elementos de uma coleção.
+
+
