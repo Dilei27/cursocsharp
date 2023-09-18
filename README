@@ -1,62 +1,118 @@
-## Operadores e Estruturas em C#
+### Operadores e Estruturas em C#
 
-### Operadores Aritméticos
+#### Operadores Aritméticos
 
-- `+` (adição): Soma dois valores.
-- `-` (subtração): Subtrai um valor de outro.
-- `*` (multiplicação): Multiplica dois valores.
-- `/` (divisão): Divide um valor pelo outro.
-- `%` (módulo): Retorna o resto da divisão de um valor pelo outro.
+- [x] `+` (adição): Soma dois valores.
+- [x] `-` (subtração): Subtrai um valor de outro.
+- [x] `*` (multiplicação): Multiplica dois valores.
+- [x] `/` (divisão): Divide um valor pelo outro.
+- [x] `%` (módulo): Retorna o resto da divisão de um valor pelo outro.
 
-### Operadores de Atribuição
+#### Operadores de Atribuição
 
-- `=` (atribuição): Atribui um valor a uma variável.
-- `+=` (atribuição de adição): Adiciona um valor a uma variável.
-- `-=` (atribuição de subtração): Subtrai um valor de uma variável.
-- `*=` (atribuição de multiplicação): Multiplica uma variável por um valor.
-- `/=` (atribuição de divisão): Divide uma variável por um valor.
+- [x] `=` (atribuição): Atribui um valor a uma variável.
+- [x] `+=` (atribuição de adição): Adiciona um valor a uma variável.
+- [x] `-=` (atribuição de subtração): Subtrai um valor de uma variável.
+- [x] `*=` (atribuição de multiplicação): Multiplica uma variável por um valor.
+- [x] `/=` (atribuição de divisão): Divide uma variável por um valor.
 
-### Operadores de Comparação
+#### Operadores de Comparação
 
-- `==` (igual): Verifica se dois valores são iguais.
-- `!=` (diferente): Verifica se dois valores são diferentes.
-- `<` (menor que): Verifica se um valor é menor que outro.
-- `>` (maior que): Verifica se um valor é maior que outro.
-- `<=` (menor ou igual a): Verifica se um valor é menor ou igual a outro.
-- `>=` (maior ou igual a): Verifica se um valor é maior ou igual a outro.
+- [x] `==` (igual): Verifica se dois valores são iguais.
+- [x] `!=` (diferente): Verifica se dois valores são diferentes.
+- [x] `<` (menor que): Verifica se um valor é menor que outro.
+- [x] `>` (maior que): Verifica se um valor é maior que outro.
+- [x] `<=` (menor ou igual a): Verifica se um valor é menor ou igual a outro.
+- [x] `>=` (maior ou igual a): Verifica se um valor é maior ou igual a outro.
 
-### Operadores Lógicos
+#### Operadores Lógicos
 
-- `&&` (E lógico): Retorna verdadeiro se ambas as condições forem verdadeiras.
-- `||` (OU lógico): Retorna verdadeiro se pelo menos uma das condições for verdadeira.
-- `!` (Negação lógica): Inverte o valor lógico de uma expressão.
+- [x] `&&` (E lógico): Retorna verdadeiro se ambas as condições forem verdadeiras.
+- [x] `||` (OU lógico): Retorna verdadeiro se pelo menos uma das condições for verdadeira.
+- [x] `!` (Negação lógica): Inverte o valor lógico de uma expressão.
 
-### Operadores Bit a Bit
+#### Operadores Bit a Bit
 
-- `&` (E bit a bit): Realiza uma operação AND bit a bit entre dois valores.
-- `|` (OU bit a bit): Realiza uma operação OR bit a bit entre dois valores.
-- `^` (OU exclusivo bit a bit): Realiza uma operação XOR bit a bit entre dois valores.
-- `~` (Negação bit a bit): Inverte todos os bits de um valor.
+- [x] `&` (E bit a bit): Realiza uma operação AND bit a bit entre dois valores.
+- [x] `|` (OU bit a bit): Realiza uma operação OR bit a bit entre dois valores.
+- [x] `^` (OU exclusivo bit a bit): Realiza uma operação XOR bit a bit entre dois valores.
+- [x] `~` (Negação bit a bit): Inverte todos os bits de um valor.
 
-### Operadores de Deslocamento de Bits
+#### Operadores de Deslocamento de Bits
 
-- `<<` (Deslocamento à esquerda): Desloca os bits de um valor para a esquerda.
-- `>>` (Deslocamento à direita): Desloca os bits de um valor para a direita.
+- [x] `<<` (Deslocamento à esquerda): Desloca os bits de um valor para a esquerda.
+- [x] `>>` (Deslocamento à direita): Desloca os bits de um valor para a direita.
 
-### Estruturas de Controle
+#### Estruturas de Controle
 
-#### Estruturas Condicionais
+##### Estruturas Condicionais
 
-- `if` (se): Executa um bloco de código se a condição for verdadeira.
-- `else` (senão): Executa um bloco de código alternativo se a condição do `if` for falsa.
-- `else if` (senão se): Permite testar múltiplas condições alternativas após um `if`.
-- `switch` (escolha): Avalia uma expressão e executa um bloco de código correspondente com base em valores.
+- [x] `if` (se): Executa um bloco de código se a condição for verdadeira.
+  
+ Exemplo:
+ ```csharp
+  int idade = 18;
+  if (idade >= 18)
+  {
+      Console.WriteLine("Você é maior de idade.");
+  }
 
-#### Estruturas de Repetição
+- [x] `else` (senão): Executa um bloco de código alternativo se a condição do if for falsa.
 
-- `for` (para): Executa um bloco de código várias vezes com base em uma condição.
-- `while` (enquanto): Executa um bloco de código enquanto uma condição é verdadeira.
-- `do while` (faça enquanto): Executa um bloco de código pelo menos uma vez e depois continua enquanto a condição é verdadeira.
-- `foreach` (para cada): Itera através de elementos de uma coleção.
+Exemplo:
+  ```csharp
+  int idade = 15;
+if (idade >= 18)
+{
+    Console.WriteLine("Você é maior de idade.");
+}
+else
+{
+    Console.WriteLine("Você é menor de idade.");
+}
+
+- [x] `else if` (senão se): Executa um bloco de código alternativo se a condição do if for falsa.
+
+  Exemplo:
+  ```csharp
+  int nota = 75;
+if (nota >= 90)
+{
+    Console.WriteLine("Nota A");
+}
+else if (nota >= 80)
+{
+    Console.WriteLine("Nota B");
+}
+else if (nota >= 70)
+{
+    Console.WriteLine("Nota C");
+}
+else
+{
+    Console.WriteLine("Nota F");
+}
+
+- [x] `switch` (escolha): Avalia uma expressão e executa um bloco de código correspondente com base em valores. 
+
+Exemplo:
+  ```csharp
+  int opcao = 2;
+switch (opcao)
+{
+    case 1:
+        Console.WriteLine("Opção 1 selecionada.");
+        break;
+    case 2:
+        Console.WriteLine("Opção 2 selecionada.");
+        break;
+    case 3:
+        Console.WriteLine("Opção 3 selecionada.");
+        break;
+    default:
+        Console.WriteLine("Opção inválida.");
+        break;
+}
+
 
 
